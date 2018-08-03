@@ -73,8 +73,9 @@ const IndexPage = () => (
     />
     <SectionCaption>12 sectopm - 6 hours</SectionCaption>
     <SectionCellGroup>
-      {staticdata.cells.map(cell => (
+      {staticdata.cells.map((cell, idx) => (
         <Cell
+          key={`cell-${idx}`}
           title={cell.title}
           image={cell.image} />
       ))}
