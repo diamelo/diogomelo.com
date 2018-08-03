@@ -12,6 +12,14 @@ a {
   font-weight: 600;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .Hero {
   background: url('../images/wallpaper3.jpg');
   height: 920px;
