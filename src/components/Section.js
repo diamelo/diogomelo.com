@@ -25,9 +25,11 @@ const SectionLogo = styled.img`
 const SectionTitleGroup = styled.div`
     display: grid;
     grid-template-columns: 300px auto;
-    margin: 0 40px;
+    margin: 0 auto;
+    padding: 0 40px;
     grid-gap: 20px;
     grid-template-rows: auto 100%;
+    max-width: 1280px;
 
     @media (max-width: 720px) {
         grid-template-columns: 1fr;

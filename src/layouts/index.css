@@ -110,6 +110,11 @@ a {
   }
 }
 
+.Cards {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .Cards h2 {
   margin: 50px 20px;
   font-size: 60px;
@@ -122,6 +127,7 @@ a {
 }
 
 .CardGroup {
+  max-width: 1280px;
   margin: 50px 40px 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
