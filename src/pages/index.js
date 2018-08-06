@@ -70,18 +70,19 @@ export default IndexPage
 
 export const query = graphql`
   query SiteProjectsQuery {
-    allContentfulProjects {
-    edges {
-      node {
-        image {
-          file {
-            url
+    allContentfulProjects (sort: { fields: [createdAt], order:ASC }) {
+      edges {
+        node {
+          image {
+            file {
+              url
+            }
           }
-          }
-        title
-        text
+          title
+          text
+          createdAt
+        }
       }
     }
-  }
   }
 `
